@@ -1,0 +1,19 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+long rem=0;
+int n; int r,s=1;
+cout <<"Enter your decimal number."<<endl;
+cin>>n;
+long m=n;
+while(n!=0)
+{
+    r= n%2;
+    rem=rem+r*s;
+    n=n/2;
+    s=s*10;
+}
+cout<<"The binary equivalent of "<<m<<" is "<<rem<<endl;
+}
