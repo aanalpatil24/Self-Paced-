@@ -1,1 +1,1 @@
-# Self-Paced-
+# Self-Paced
