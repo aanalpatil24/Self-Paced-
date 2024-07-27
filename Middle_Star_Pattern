@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+cout<<"Enter the no. of lines in your pattern."<<endl;
+cin>>n;
+int i=1;
+while (i<=n)
+{
+    //First triangle
+    int j=1;
+    while(j<=n-i+1)
+    {
+        cout<<j<<" ";
+        j++;
+    }
+//Second triangle
+int a=1;
+while(a<=i*2-2)
+{
+    cout<<"*"<<" ";
+    a++;
+}
+//Third triangle
+int s=n-i+1;
+while(s>=1)
+{
+    cout<<s<<" ";
+    s--;
+}
+cout<<endl;
+i++;
+}
+}
