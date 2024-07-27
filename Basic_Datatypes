@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a=2;
+    cout<<a<<endl;
+    char ch='a';
+    int b= int(ch);
+    cout<<b;
+    cout<<"\n";
+    cout<<ch<<endl;
+    bool bl= int(ch)==a;
+    cout<<bl<<endl;
+    bool b_2= true;
+    cout<<b_2<<'\n';
+    int size=sizeof(a);
+    cout<<"Size of a is\n"<<size;
+    unsigned int c=-112;
+    cout<<c<<endl;
+
+return 0;
+}
