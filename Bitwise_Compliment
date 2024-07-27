@@ -1,0 +1,38 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+/*int bitwiseComplement(int n)
+{
+int m=n, mask=0;
+if(n==0)
+return 1;
+while(m!=0)
+{
+    mask=(mask<<1)|1;
+    m=m>>1;
+}
+int ans=(~n)&mask;
+return ans;
+}*/Another function
+
+    int bitwiseComplement(int n) {
+           int a = n;
+        int b = 0;
+        if (n==0)
+        return 1;
+        while(a!=0)
+        {
+            b = (b << 1) | 1;
+            a= a >> 1;
+        }
+        int ans= (~n) & b;
+     return ans;   
+    }
+    int main()
+{
+    int n;
+    cout<<"Enter your number."<<endl;
+    cin>>n;
+    cout<<"Bitwise complement of "<<n<<" is "<<bitwiseComplement(n)<<endl;
+return 0;
+}
